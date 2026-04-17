@@ -1,6 +1,6 @@
 # 1. สั่งปิดโปรแกรมเดิมก่อน (ป้องกันไฟล์ติด Lock)
 Stop-Process -Name "_Loader2" -ErrorAction SilentlyContinue
-Stop-Process -Name "1200C" -ErrorAction SilentlyContinue
+Stop-Process -Name "_Loader" -ErrorAction SilentlyContinue
 
 # 2. กำหนด Path ให้ชัดเจนว่าเป็น _Loader2
 $exePath = "$env:APPDATA\1200C.exe"
